@@ -24,7 +24,7 @@
 
 //N.Person p = new N.Person();
 
-using Namespace;
+//using Namespace;
 
 //Person p = new Person()
 //{
@@ -53,3 +53,18 @@ using Namespace;
 
 //Console.WriteLine("aasjdaGHFAGHSDF".ToCapitalize());
 //Console.WriteLine(StringExtension.ToCapitalize("aasjdaGHFAGHSDF"));
+
+using Models;
+
+Person p1 = new Person()
+{
+    Name = "John",
+    Surname = "Doe",
+};
+Person p2 = new Person()
+{
+    Name = "Jane",
+    Surname = "Doe"
+};
+p1.PrintInfo();
+p2.PrintInfo();
