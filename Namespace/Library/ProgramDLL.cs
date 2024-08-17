@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Library
+{
+    internal class ProgramDLL
+    {
+        static void Mainn()
+        {
+            Person p = new Person();
+            //p.Name = "asdasd";
+        }
+    }
+}
