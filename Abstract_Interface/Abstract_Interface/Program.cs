@@ -52,19 +52,50 @@ using System.Globalization;
 #endregion
 
 #region Homework
-Console.WriteLine("Enter username");
-User user = new User(Console.ReadLine());
+//Console.WriteLine("Enter username");
+//User user = new User(Console.ReadLine());
 
-while (string.IsNullOrEmpty(user.Username))
+//while (string.IsNullOrEmpty(user.Username))
+//{
+//    Console.WriteLine("Username must be greater than 5 and less than 26");
+//    user.Username = Console.ReadLine();
+//}
+
+//do
+//{
+//    Console.WriteLine("Enter password");
+//    user.Password = Console.ReadLine();
+//} while (String.IsNullOrEmpty(user.Password));
+//Console.WriteLine(user);
+#endregion
+
+#region Task
+
+Vehicle[] vehicles =
 {
-    Console.WriteLine("Username must be greater than 5 and less than 26");
-    user.Username = Console.ReadLine();
+    new Car()
+    {
+        Color = "red",
+        DoorCount = 2,
+        DrivePath = 4000,
+        DriveTime = 352,
+        FactoryName = "BMW",
+        Model = "F30",
+        IsElectricCar = false
+    },
+    new Bicycle
+    {
+        Color = "white",
+        DriveTime = 500,
+        Model = "Track",
+        FactoryName = "BMX",
+        DrivePath = 2000,
+        WheelCount = 2
+    }
+};
+foreach (var vehicle in vehicles)
+{
+    Console.WriteLine(vehicle.ToString() + " " + Math.Round(vehicle.AverageSpeed(),1));
+    //vehicle.DefineNatureHarmness();
 }
-
-do
-{
-    Console.WriteLine("Enter password");
-    user.Password = Console.ReadLine();
-} while (String.IsNullOrEmpty(user.Password));
-Console.WriteLine(user);
 #endregion
